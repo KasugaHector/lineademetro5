@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Linea 7 MetroCDMX</title>
+    <title>Linea 5  metro CDMX</title>
     <style>
         * {
             margin: 0;
@@ -388,8 +388,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>Linea 7 Metro CDMX</h1>
-            <p class="subtitle">Escanea tu tarjeta del Metro</p>
+            <h1>Linea 5  metro CDMX</h1>
+            <p class="subtitle">Escanea tu tarjeta del Metro </p>
         </header>
         
         <section class="scan-section">
@@ -427,7 +427,7 @@
                 <h4>Instrucciones para el escaneo:</h4>
                 <p>1. Activa la cámara con el botón "Activar Cámara"</p>
                 <p>2. Enfoca tu tarjeta del Metro dentro del marco verde</p>
-                <p>3. El sistema detectará automáticamente la tarjeta/p>
+                <p>3. El sistema detectará automáticamente la tarjeta</p>
                 <p>4. Si no tienes una tarjeta física, usa el "Modo Demostración"</p>
             </div>
             
@@ -439,22 +439,22 @@
         
         <section class="map-section" id="mapSection">
             <div class="map-container">
-                <h2 class="map-title">Mapa de la linea 7 de la Ciudad de México</h2>
-                <img src="assets/linea7.jpg" alt="Mapa de la linea 7 de la CDMX" class="map-image" id="mapImage">
+                <h2 class="map-title">Mapa de la Linea 5 de la Ciudad de México</h2>
+                <img src="assets/linea5.jpg" alt="Mapa de la Linea 5 CDMX" class="map-image" id="mapImage">
             </div>
             
             <div class="instructions">
-                <h3>Información de la linea 7 </h3>
-                <p>La Línea 7 facilita el acceso a importantes espacios culturales y recreativos como el Museo Nacional de Antropología, el Auditorio Nacional, el Bosque de Chapultepec, el Museo Soumaya, la Torre Mayor y la zona de Polanco.</p>
+                <h3>Información de la Linea 5  metro CDMX </h3>
+                <p>La Línea 5 facilita el acceso a espacios como el Aeropuerto Internacional de la Ciudad de México, el Bosque de Aragón, el Deportivo Oceanía y zonas de conexión importantes en Pantitlán y Politécnico.</p>
                 
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div>Estación Terminal: Barranca del Muerto </div>
+                    <div>Estación Terminal: Politecnico </div>
                 </div>
                 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div>Estación Terminal: El Rosario </div>
+                    <div>Estación Terminal: Pantitlan </div>
                 </div>
                 
                 <p>El horario de servicio es de 5:00 A 23:00 HRS, 6:00 A 23:00 HRS, 7:00 A 23:00 HRS entre semana</p>
@@ -624,7 +624,7 @@
             const trips = Math.floor(Math.random() * 15);
             
             // Mostrar mensaje de éxito
-            statusMessage.textContent = ✓ Código QR detectado: Tarjeta ${cardUID.substring(0, 8)};
+            statusMessage.textContent = `✓ Código QR detectado: Tarjeta ${cardUID.substring(0, 8)}`;
             statusMessage.className = "status-message status-success";
             
             // Detener cámara
@@ -741,4 +741,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
